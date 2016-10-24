@@ -1,0 +1,7 @@
+@mixin easeDown {
+  -webkit-transition: top .3s ease;
+  -moz-transition: top .3s ease;
+  -ms-transition: top .3s ease;
+  -o-transition: top .3s ease;
+  transition: top .3s ease;
+}
