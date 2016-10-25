@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalale=no">
+
+    <title>MemorEase</title>
+
+    <link rel="stylesheet" href="../UI/css/imports.css" type="text/css">
+</head>
+
+<body>
+<header class="noLogo">
+    <nav>
+        <!-- left nav -->
+        <ul id="mainNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- right nav -->
+        <ul id="loginNav">
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="pageHeadContact">
+        <h1>Contact Us</h1>
+        <img class="pageHeadCircle" src="../UI/img/circle.png" width="175" height="175">
+    </div>
+
+    <div class="ContactFormContainer">
+        <form>
+            <div class="halfForm">
+                <label>Name</label><br>
+                <input type="text" placeholder="Your Full Name*" name="name" required><br>
+
+                <label>Email</label><br>
+                <input type="email" placeholder="Your Email*" name="email" required>
+
+                <label>Phone</label><br>
+                <input type="tel" placeholder="Your Phone" name="phone">
+            </div>
+            <div class="halfForm right">
+                <label>Message</label>
+                <textarea rows=12 type="text" placeholder="Your Message Here*" name="message" required></textarea>
+            </div>
+
+            <div>
+                <button class="buttonSub" type="submit">Submit</button>
+                <button class="buttonCan" type="button">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+<footer id="loginFooter">
+    <div class="container">
+        <p>&copy;2016 MemorEase</p>
+    </div>
+</footer>
+</html>

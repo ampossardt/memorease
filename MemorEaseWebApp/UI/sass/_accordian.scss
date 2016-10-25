@@ -1,0 +1,50 @@
+// accordian
+.accordian {
+  margin: 400px auto 0;
+  .accBlock {
+    color: white;
+    font-size: 0;
+    height: 65px;
+    overflow: hidden;
+    padding: 25px 25px 0;
+    @include easer;
+    &:hover {
+      font-size: initial;
+      height: 300px;
+      @include easer;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    p {
+      line-height: 1.25;
+    }
+    a {
+      &.button {
+        background: $yellow;
+        color: $dirt;
+        padding: 15px 40px;
+        position: relative;
+        top: 60px;
+        left: 430px;
+        @include dropShadow;
+        @include border;
+        &:hover {
+          background: darken($yellow, 7%);
+        }
+      }
+    }
+  }
+}
+
+//banner
+.banner {
+  color: $dirt;
+  height: 400px;
+  margin: 100px auto 0;
+  padding: 25px;
+  h2 {
+    color: $dirt;
+    margin: 0 0 30px;
+  }
+}

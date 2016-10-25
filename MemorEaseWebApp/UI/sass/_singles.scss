@@ -1,0 +1,63 @@
+
+.noLogo {
+  background: $bg;
+}
+
+.clock {
+  position: absolute;
+  top: 40px;
+  left: 256px;
+}
+
+#logo {
+  margin: 0 auto;
+  position: relative;
+  top: -5px;
+  width: 600px;
+  text-align: center;
+}
+
+#noNav {
+  margin: 30px 15px;
+  text-align: left;
+}
+
+.mainCircle {
+  border-radius: 50% 50%;
+  position: relative;
+  top: 140px;
+  left: -200px;
+  z-index: 5;
+}
+
+.accentCircle {
+  position: relative;
+  top: 160px;
+  left: -330px;
+  z-index: 4;
+}
+
+.yellowCircle {
+  position: relative;
+  top: -130px;
+  left: 800px;
+  z-index: 2;
+}
+
+.salmon {
+  background: $salmon;
+}
+
+.blue {
+  background: $blue;
+}
+
+.green {
+  background: $green;
+}
+
+.grey {
+  background: darken($bg, 5%);
+}
+
+

@@ -1,4 +1,4 @@
-@mixin easeArrow {
+@mixin easer {
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
@@ -6,12 +6,8 @@
   transition: all .5s ease;
 }
 
-@mixin myBorderBot {
-  border-radius: 0 5px 5px 0;
-}
-
-@mixin myBorderTop {
-  border-radius: 5px 0 0 5px;
+@mixin border {
+  border-radius: 5px;
 }
 
 @mixin dropShadow {
@@ -20,11 +16,13 @@
   box-shadow: -2px 3px 5px 0px rgba(0,0,0,0.2);
 }
 
+// clock turn
 @keyframes rotate {
   100% {
       transform: rotateZ(-360deg);
     }
 }
+
 .minute-container {
   position: absolute;
   animation: rotate 10s infinite linear;

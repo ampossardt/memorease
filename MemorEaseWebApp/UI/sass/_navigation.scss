@@ -5,7 +5,7 @@ header {
       a {font-size: 0;}
     }
     background: $dirt;
-    @include myBorderBot;
+    border-radius: 0 5px 5px 0;
     float: left;
     height: 26px;
     left: 0;
@@ -14,7 +14,7 @@ header {
     top: 30px;
     width: 30px;
     z-index: 5;
-    @include easeArrow;
+    @include easer;
     li {display: inline-block;}
     &:before {
       content: '';
@@ -25,7 +25,7 @@ header {
       right: 20px;
       transform: rotate(45deg);
       z-index: 2;
-      @include easeArrow;
+      @include easer;
     }
     &:after {
       content: '';
@@ -36,23 +36,23 @@ header {
       right: 20px;
       transform: rotate(-45deg);
       z-index: 2;
-      @include easeArrow;
+      @include easer;
     }
     &:hover {
       position: fixed;
       left: -10px;
       width: 400px;
       z-index: 5;
-      @include easeArrow;
+      @include easer;
       &:before {
         border-top: solid 3px $tan;
         transform: rotate(-45deg);
-        @include easeArrow;
+        @include easer;
       }
       &:after {
         border-top: solid 3px $tan;
         transform: rotate(45deg);
-        @include easeArrow;
+        @include easer;
       }
       a {
         &:link,
@@ -62,7 +62,7 @@ header {
           font-weight: lighter;
           text-decoration: none;
           padding: 14px 25px;
-          @include easeArrow;
+          @include easer;
         }
         &:hover {
           color: white;
@@ -70,7 +70,7 @@ header {
           font-weight: lighter;
           text-decoration: underline;
           padding: 14px 25px;
-          @include easeArrow;
+          @include easer;
         }
         &:active {
           color: white;
@@ -78,7 +78,7 @@ header {
           font-weight: lighter;
           text-decoration: none;
           padding: 14px 25px;
-          @include easeArrow;
+          @include easer;
         }
       }
     }
@@ -94,7 +94,7 @@ header {
       a {font-size: 0;}
     }
     background: $salmon;
-    @include myBorderTop;
+    border-radius: 5px 0 0 5px;
     float: right;
     height: 26px;
     padding: 15px;
@@ -104,7 +104,7 @@ header {
     text-align: right;
     width: 35px;
     z-index: 5;
-    @include easeArrow;
+    @include easer;
     li {display: inline-block;}
     &:before {
       content: '';
@@ -115,7 +115,7 @@ header {
       left: 20px;
       transform: rotate(-45deg);
       z-index: 2;
-      @include easeArrow;
+      @include easer;
     }
     &:after {
       content: '';
@@ -126,22 +126,22 @@ header {
       left: 20px;
       transform: rotate(45deg);
       z-index: 2;
-      @include easeArrow;
+      @include easer;
     }
     &:hover {
       position: fixed;
       width: 300px;
       z-index: 5;
-      @include easeArrow;
+      @include easer;
       &:before {
         border-top: solid 3px $tuna;
         transform: rotate(45deg);
-        @include easeArrow;
+        @include easer;
       }
       &:after {
         border-top: solid 3px $tuna;
         transform: rotate(-45deg);
-        @include easeArrow;
+        @include easer;
       }
       a {
         &:link,
@@ -151,7 +151,7 @@ header {
           font-weight: bold;
           text-decoration: none;
           padding: 14px 25px;
-          @include easeArrow;
+          @include easer;
         }
         &:hover {
           color: white;
@@ -159,7 +159,7 @@ header {
           font-weight: bold;
           text-decoration: underline;
           padding: 14px 25px;
-          @include easeArrow;
+          @include easer;
         }
         &:active {
           color: white;
@@ -167,7 +167,7 @@ header {
           font-weight: bold;
           text-decoration: none;
           padding: 14px 25px;
-          @include easeArrow;
+          @include easer;
         }
       }
     }
