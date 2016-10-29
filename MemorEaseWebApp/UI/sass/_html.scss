@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: $bg;
+  color: $dirt;
+  font-size: 18px;
+  font-family: $memorease;
+  margin: 120px 0 0;
+  padding: 0;
+
+  h1 {
+    @include h1;
+  }
+
+  h2 {
+    @include h2;
+  }
+
+  h3 {
+    @include h3;
+  }
+
+  h4 {
+    @include h4;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    color: $salmon;
+    font-size: 18px;
+    text-decoration: none;
+    &:hover {
+      color: darken($salmon, 15%);
+    }
+  }
+}
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  width: 800px;
+}
+
+#homeHeader {
+  background: $blue;
+  height: 120px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  .headerContent {
+    position: relative;
+    height: 75px;
+    padding: 15px;
+    z-index: 10;
+  }
+}
+
+.homeFirst {
+  position: relative;
+}
+
+.heroWrap {
+  position: absolute;
+  top: 40px;
+  width: 800px;
+  .circleTitle {
+    position: relative;
+    top: 175px;
+    z-index: 100;
+  }
+  .circleSubTitle {
+    position: relative;
+    top: 200px;
+    z-index: 100;
+  }
+}
+
+.pageHeadLogin {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    position: relative;
+    z-index: 5;
+  }
+  .pageHeadCircle {
+    position: relative;
+    top: -120px;
+    left: -200px;
+    z-index: 3;
+    @include easer;
+    &:hover {
+      transform: scale(1.5);
+      @include easer;
+    }
+  }
+}
+
+.pageHeadAbout {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    position: relative;
+    z-index: 5;
+  }
+  .pageHeadCircle {
+    position: relative;
+    top: -120px;
+    left: -240px;
+    z-index: 3;
+    @include easer;
+    &:hover {
+      transform: scale(1.5);
+      @include easer;
+    }
+  }
+}
+
+.pageHeadContact {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    position: relative;
+    z-index: 5;
+  }
+  .pageHeadCircle {
+    position: relative;
+    top: -120px;
+    left: -150px;
+    z-index: 3;
+    @include easer;
+    &:hover {
+      transform: scale(1.5);
+      @include easer;
+    }
+  }
+}
+
+footer {
+  background: $dirt;
+  color: white;
+  height: 50px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  p {
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 15px;
+  }
+}
+
+#loginFooter {
+  position: absolute;
+  bottom: 0;
+}

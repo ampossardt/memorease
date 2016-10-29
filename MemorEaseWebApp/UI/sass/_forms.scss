@@ -1,0 +1,140 @@
+// member login form
+.formContainer {
+  border: solid 1px $tan;
+  border-color: lighten($tan, 10%);
+  border-radius: 5px;
+  margin: 100px auto 0;
+  padding: 15px;
+  width: 400px;
+  input,
+  textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    &.checkFix {
+      padding-right: 10px;
+      width: 20px !important;
+    }
+  }
+  .buttonLog {
+    background-color: $green;
+    border-radius: 5px;
+    color: $dirt;
+    font-size: 14px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    &:hover {
+      background: darken($green, 10%);
+      color: $dirt;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+  .buttonCan {
+    background-color: $salmon;
+    border-radius: 5px;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    &:hover {
+      background: darken($salmon, 10%);
+      color: #fff;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+    }
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+}
+
+// contact form
+.ContactFormContainer {
+  border: solid 1px $tan;
+  border-color: lighten($tan, 10%);
+  border-radius: 5px;
+  margin: 100px auto 100px;
+  padding: 15px;
+  width: 700px;
+  .halfForm {
+    display: inline-block;
+    width: 330px
+  }
+  .right {
+    float: right;
+  }
+  input,
+  textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    &.checkFix {
+      padding-right: 10px;
+      width: 20px !important;
+    }
+  }
+  .buttonSub {
+    background-color: $green;
+    border-radius: 5px;
+    color: $dirt;
+    font-size: 14px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    &:hover {
+      background: darken($green, 10%);
+      color: $dirt;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+  .buttonCan {
+    background-color: $salmon;
+    border-radius: 5px;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    &:hover {
+      background: darken($salmon, 10%);
+      color: #fff;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 30%;
+    }
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+}

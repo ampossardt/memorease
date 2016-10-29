@@ -1,0 +1,29 @@
+
+$memorease: Arial, Helvetica, sans-serif;
+
+
+@mixin h1 {
+  color: $dirt;
+  font-size: $h1-size;
+  font-weight: bolder;
+  padding: 0 25px;
+}
+
+@mixin h2 {
+  color: white;
+  font-size: $h2-size;
+  font-weight: bolder;
+}
+
+@mixin h3 {
+  color: $dirt;
+  font-size: $h3-size;
+  line-height: $h3-line-height;
+}
+
+@mixin h4 {
+  color: $salmon;
+  font-size: $h4-size;
+  line-height: $h4-line-height;
+  padding: 0 25px;
+}

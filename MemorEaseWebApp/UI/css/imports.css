@@ -1,0 +1,630 @@
+@keyframes rotate {
+  100% {
+    transform: rotateZ(-360deg); } }
+.minute-container {
+  position: absolute;
+  animation: rotate 10s infinite linear;
+  width: 36px;
+  height: 36px; }
+
+.minute {
+  content: '';
+  width: 2px;
+  height: 18px;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.5px; }
+
+.accordian {
+  margin: 400px auto 0; }
+  .accordian .accBlock {
+    color: white;
+    font-size: 0;
+    height: 65px;
+    overflow: hidden;
+    padding: 25px 25px 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .accordian .accBlock:hover {
+      font-size: initial;
+      height: 300px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    .accordian .accBlock h2 {
+      margin-bottom: 30px; }
+    .accordian .accBlock p {
+      line-height: 1.25; }
+    .accordian .accBlock a.button {
+      background: #fff5c3;
+      color: #7c786a;
+      padding: 15px 40px;
+      position: relative;
+      top: 60px;
+      left: 430px;
+      -webkit-box-shadow: -2px 3px 5px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: -2px 3px 5px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: -2px 3px 5px 0px rgba(0, 0, 0, 0.2);
+      border-radius: 5px; }
+      .accordian .accBlock a.button:hover {
+        background: #ffef9f; }
+
+.banner {
+  color: #7c786a;
+  height: 400px;
+  margin: 100px auto 0;
+  padding: 25px; }
+  .banner h2 {
+    color: #7c786a;
+    margin: 0 0 30px; }
+
+.formContainer {
+  border: solid 1px #a7a393;
+  border-color: #bebbaf;
+  border-radius: 5px;
+  margin: 100px auto 0;
+  padding: 15px;
+  width: 400px; }
+  .formContainer input,
+  .formContainer textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%; }
+    .formContainer input.checkFix,
+    .formContainer textarea.checkFix {
+      padding-right: 10px;
+      width: 20px !important; }
+  .formContainer .buttonLog {
+    background-color: #d4e497;
+    border-radius: 5px;
+    color: #7c786a;
+    font-size: 14px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%; }
+    .formContainer .buttonLog:hover {
+      background: #c3d96f;
+      color: #7c786a;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%; }
+  .formContainer .buttonCan {
+    background-color: #e06c60;
+    border-radius: 5px;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%; }
+    .formContainer .buttonCan:hover {
+      background: #d84535;
+      color: #fff;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 30%; }
+  .formContainer span.psw {
+    float: right;
+    padding-top: 16px; }
+
+.ContactFormContainer {
+  border: solid 1px #a7a393;
+  border-color: #bebbaf;
+  border-radius: 5px;
+  margin: 100px auto 100px;
+  padding: 15px;
+  width: 700px; }
+  .ContactFormContainer .halfForm {
+    display: inline-block;
+    width: 330px; }
+  .ContactFormContainer .right {
+    float: right; }
+  .ContactFormContainer input,
+  .ContactFormContainer textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%; }
+    .ContactFormContainer input.checkFix,
+    .ContactFormContainer textarea.checkFix {
+      padding-right: 10px;
+      width: 20px !important; }
+  .ContactFormContainer .buttonSub {
+    background-color: #d4e497;
+    border-radius: 5px;
+    color: #7c786a;
+    font-size: 14px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%; }
+    .ContactFormContainer .buttonSub:hover {
+      background: #c3d96f;
+      color: #7c786a;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%; }
+  .ContactFormContainer .buttonCan {
+    background-color: #e06c60;
+    border-radius: 5px;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%; }
+    .ContactFormContainer .buttonCan:hover {
+      background: #d84535;
+      color: #fff;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 30%; }
+  .ContactFormContainer span.psw {
+    float: right;
+    padding-top: 16px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background: #f2efef;
+  color: #7c786a;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 120px 0 0;
+  padding: 0; }
+  body h1 {
+    color: #7c786a;
+    font-size: 60px;
+    font-weight: bolder;
+    padding: 0 25px; }
+  body h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: bolder; }
+  body h3 {
+    color: #7c786a;
+    font-size: 25px;
+    line-height: 27px; }
+  body h4 {
+    color: #e06c60;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 25px; }
+  body p {
+    font-size: 18px; }
+  body a {
+    color: #e06c60;
+    font-size: 18px;
+    text-decoration: none; }
+    body a:hover {
+      color: #cc3728; }
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  width: 800px; }
+
+#homeHeader {
+  background: #8dcdc1;
+  height: 120px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; }
+  #homeHeader .headerContent {
+    position: relative;
+    height: 75px;
+    padding: 15px;
+    z-index: 10; }
+
+.homeFirst {
+  position: relative; }
+
+.heroWrap {
+  position: absolute;
+  top: 40px;
+  width: 800px; }
+  .heroWrap .circleTitle {
+    position: relative;
+    top: 175px;
+    z-index: 100; }
+  .heroWrap .circleSubTitle {
+    position: relative;
+    top: 200px;
+    z-index: 100; }
+
+.pageHeadLogin {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center; }
+  .pageHeadLogin h1 {
+    position: relative;
+    z-index: 5; }
+  .pageHeadLogin .pageHeadCircle {
+    position: relative;
+    top: -120px;
+    left: -200px;
+    z-index: 3;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .pageHeadLogin .pageHeadCircle:hover {
+      transform: scale(1.5);
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+
+.pageHeadAbout {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center; }
+  .pageHeadAbout h1 {
+    position: relative;
+    z-index: 5; }
+  .pageHeadAbout .pageHeadCircle {
+    position: relative;
+    top: -120px;
+    left: -240px;
+    z-index: 3;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .pageHeadAbout .pageHeadCircle:hover {
+      transform: scale(1.5);
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+
+.pageHeadContact {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center; }
+  .pageHeadContact h1 {
+    position: relative;
+    z-index: 5; }
+  .pageHeadContact .pageHeadCircle {
+    position: relative;
+    top: -120px;
+    left: -150px;
+    z-index: 3;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .pageHeadContact .pageHeadCircle:hover {
+      transform: scale(1.5);
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+
+footer {
+  background: #7c786a;
+  color: white;
+  height: 50px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  width: 100%; }
+  footer p {
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 15px; }
+
+#loginFooter {
+  position: absolute;
+  bottom: 0; }
+
+header #mainNav {
+  background: #7c786a;
+  border-radius: 0 5px 5px 0;
+  float: left;
+  height: 26px;
+  left: 0;
+  padding: 15px;
+  position: fixed;
+  top: 30px;
+  width: 30px;
+  z-index: 5;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+  header #mainNav li a {
+    font-size: 0; }
+  header #mainNav li {
+    display: inline-block; }
+  header #mainNav:before {
+    content: '';
+    width: 15px;
+    border-top: solid 3px white;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    transform: rotate(45deg);
+    z-index: 2;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  header #mainNav:after {
+    content: '';
+    width: 15px;
+    border-top: solid 3px white;
+    position: absolute;
+    top: 31px;
+    right: 20px;
+    transform: rotate(-45deg);
+    z-index: 2;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  header #mainNav:hover {
+    position: fixed;
+    left: -10px;
+    width: 400px;
+    z-index: 5;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    header #mainNav:hover:before {
+      border-top: solid 3px #a7a393;
+      transform: rotate(-45deg);
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    header #mainNav:hover:after {
+      border-top: solid 3px #a7a393;
+      transform: rotate(45deg);
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    header #mainNav:hover a:link, header #mainNav:hover a:visited {
+      color: white;
+      font-size: 14px;
+      font-weight: lighter;
+      text-decoration: none;
+      padding: 14px 25px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    header #mainNav:hover a:hover {
+      color: white;
+      font-size: 14px;
+      font-weight: lighter;
+      text-decoration: underline;
+      padding: 14px 25px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    header #mainNav:hover a:active {
+      color: white;
+      font-size: 14px;
+      font-weight: lighter;
+      text-decoration: none;
+      padding: 14px 25px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+header #loginNav {
+  background: #e06c60;
+  border-radius: 5px 0 0 5px;
+  float: right;
+  height: 26px;
+  padding: 15px;
+  position: fixed;
+  right: 0;
+  top: 30px;
+  text-align: right;
+  width: 35px;
+  z-index: 5;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+  header #loginNav li:first-child a {
+    margin-left: 10px; }
+  header #loginNav li a {
+    font-size: 0; }
+  header #loginNav li {
+    display: inline-block; }
+  header #loginNav:before {
+    content: '';
+    width: 15px;
+    border-top: solid 3px white;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    transform: rotate(-45deg);
+    z-index: 2;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  header #loginNav:after {
+    content: '';
+    width: 15px;
+    border-top: solid 3px white;
+    position: absolute;
+    top: 31px;
+    left: 20px;
+    transform: rotate(45deg);
+    z-index: 2;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  header #loginNav:hover {
+    position: fixed;
+    width: 300px;
+    z-index: 5;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    header #loginNav:hover:before {
+      border-top: solid 3px #f49272;
+      transform: rotate(45deg);
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    header #loginNav:hover:after {
+      border-top: solid 3px #f49272;
+      transform: rotate(-45deg);
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    header #loginNav:hover a:link, header #loginNav:hover a:visited {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 14px 25px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    header #loginNav:hover a:hover {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: underline;
+      padding: 14px 25px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    header #loginNav:hover a:active {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 14px 25px;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+
+.noLogo {
+  background: #f2efef; }
+
+.clock {
+  position: absolute;
+  top: 40px;
+  left: 256px; }
+
+#logo {
+  margin: 0 auto;
+  position: relative;
+  top: -5px;
+  width: 600px;
+  text-align: center; }
+
+#noNav {
+  margin: 30px 15px;
+  text-align: left; }
+
+.mainCircle {
+  border-radius: 50% 50%;
+  position: relative;
+  top: 140px;
+  left: -200px;
+  z-index: 5; }
+
+.accentCircle {
+  position: relative;
+  top: 160px;
+  left: -330px;
+  z-index: 4; }
+
+.yellowCircle {
+  position: relative;
+  top: -130px;
+  left: 800px;
+  z-index: 2; }
+
+.salmon {
+  background: #e06c60; }
+
+.blue {
+  background: #8dcdc1; }
+
+.green {
+  background: #d4e497; }
+
+.grey {
+  background: #e7e1e1; }
+
+/*# sourceMappingURL=imports.css.map */
