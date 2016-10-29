@@ -29,40 +29,53 @@
 </header>
 
 <div class="container">
-    <div class="pageHeadContact">
-        <h1>Contact Us</h1>
+    <div class="pageHeadLogin">
+        <h1>Registration</h1>
         <img class="pageHeadCircle" src="../UI/img/circle.png" width="175" height="175">
     </div>
 
-    <div class="ContactFormContainer">
+    <div class="formContainer">
         <form>
-            <div class="halfForm">
-                <label>Name</label><br>
-                <input type="text" placeholder="Your Full Name*" name="name" required><br>
+            <div>
+                <label>First Name</label><br>
+                <input type="text" placeholder="Your First Name*" name="firstName" required>
+
+                <label>Last Name</label><br>
+                <input type="text" placeholder="Your Last Name*" name="lastName" required>
 
                 <label>Email</label><br>
                 <input type="email" placeholder="Your Email*" name="email" required>
 
                 <label>Phone</label><br>
                 <input type="tel" placeholder="Your Phone" name="phone">
-            </div>
-            <div class="halfForm right">
-                <label>Message</label>
-                <textarea rows=12 type="text" placeholder="Your Message Here*" name="message" required></textarea>
+
+                <label><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Desired Username*" name="username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password*" name="password" required>
+
+                <label><b>Confirm Password</b></label>
+                <input type="password" placeholder="Re-Enter Password*" name="" required>
+
+                <button class="buttonLog" type="submit">Login</button>
+                <input class="checkFix" type="checkbox" checked="checked"> Remember me
             </div>
 
             <div>
-                <button class="buttonSub" type="submit">Submit</button>
                 <button class="buttonCan" type="button">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
         </form>
     </div>
 </div>
 </body>
 
-<footer id="contactFooter">
+<footer>
     <div class="container">
         <p>&copy;2016 MemorEase</p>
     </div>
 </footer>
 </html>
+
+

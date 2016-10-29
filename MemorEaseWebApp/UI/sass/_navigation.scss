@@ -85,92 +85,46 @@ header {
   }
 
   #loginNav {
-    li {
-      &:first-child {
-        a {
-          margin-left: 10px;
-        }
-      }
-      a {font-size: 0;}
-    }
-    background: $salmon;
-    border-radius: 5px 0 0 5px;
+    background: darken($blue, 20%);
     float: right;
     height: 26px;
     padding: 15px;
     position: fixed;
-    right: 0;
+    right: 30px;
     top: 30px;
-    text-align: right;
-    width: 35px;
+    text-align: center;
+    width: 280px;
     z-index: 5;
     @include easer;
+    @include border;
     li {display: inline-block;}
-    &:before {
-      content: '';
-      width: 15px;
-      border-top: solid 3px white;
-      position: absolute;
-      top: 22px;
-      left: 20px;
-      transform: rotate(-45deg);
-      z-index: 2;
-      @include easer;
-    }
-    &:after {
-      content: '';
-      width: 15px;
-      border-top: solid 3px white;
-      position: absolute;
-      top: 31px;
-      left: 20px;
-      transform: rotate(45deg);
-      z-index: 2;
-      @include easer;
-    }
-    &:hover {
-      position: fixed;
-      width: 300px;
-      z-index: 5;
-      @include easer;
-      &:before {
-        border-top: solid 3px $tuna;
-        transform: rotate(45deg);
+    a {
+      &:link,
+      &:visited {
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 14px 25px;
         @include easer;
       }
-      &:after {
-        border-top: solid 3px $tuna;
-        transform: rotate(-45deg);
+      &:hover {
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: underline;
+        padding: 14px 25px;
         @include easer;
       }
-      a {
-        &:link,
-        &:visited {
-          color: white;
-          font-size: 14px;
-          font-weight: bold;
-          text-decoration: none;
-          padding: 14px 25px;
-          @include easer;
-        }
-        &:hover {
-          color: white;
-          font-size: 14px;
-          font-weight: bold;
-          text-decoration: underline;
-          padding: 14px 25px;
-          @include easer;
-        }
-        &:active {
-          color: white;
-          font-size: 14px;
-          font-weight: bold;
-          text-decoration: none;
-          padding: 14px 25px;
-          @include easer;
-        }
+      &:active {
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 14px 25px;
+        @include easer;
+      }
       }
     }
   }
-}
 
