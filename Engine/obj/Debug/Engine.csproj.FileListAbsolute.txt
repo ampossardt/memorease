@@ -1,0 +1,6 @@
+c:\users\andrew\documents\visual studio 2013\Projects\MemorEaseNew\Engine\bin\Engine.dll.config
+c:\users\andrew\documents\visual studio 2013\Projects\MemorEaseNew\Engine\bin\Engine.dll
+c:\users\andrew\documents\visual studio 2013\Projects\MemorEaseNew\Engine\bin\Engine.pdb
+c:\users\andrew\documents\visual studio 2013\Projects\MemorEaseNew\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+c:\users\andrew\documents\visual studio 2013\Projects\MemorEaseNew\Engine\obj\Debug\Engine.dll
+c:\users\andrew\documents\visual studio 2013\Projects\MemorEaseNew\Engine\obj\Debug\Engine.pdb

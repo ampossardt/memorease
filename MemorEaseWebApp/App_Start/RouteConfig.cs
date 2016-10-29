@@ -5,13 +5,25 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace MemorEaseWebApp
+namespace MemorEase
 {
     public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                name: "Register",
+                url: "Register",
+                defaults: new { controller = "Account", action = "Register" }
+            );
+
+            routes.MapRoute(
+                name: "Login",
+                url: "Login",
+                defaults: new { controller = "Account", action = "Login" }
+            );
 
             routes.MapRoute(
                 name: "Default",
