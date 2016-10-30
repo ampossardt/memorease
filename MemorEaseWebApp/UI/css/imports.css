@@ -72,6 +72,10 @@
   margin: 100px auto 50px;
   padding: 15px;
   width: 400px; }
+  .formContainer .field-validation-error input {
+    border: 2px solid #cc3728; }
+  .formContainer .field-validation-error label {
+    color: #cc3728; }
   .formContainer input,
   .formContainer textarea {
     padding: 12px 20px;
